@@ -3,53 +3,175 @@
     padding: 0px;
 }
 body{
-    background: url(../images/background.png) center top no-repeat;
+    
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12pt;
+    font-size: 12px;
+
 }
-/*=============TOP============= */
-.top{
-    width: 1200px;
+/*=============header============= */
+.header{
+    background: url(../images/background.png) center top no-repeat;
     height: 88px;
+    margin: 0 100px 0 100px;
 }
 .cart a{
     float: right;
-    font-size: 34px;
-    padding: 32px 0px 22px 30px;
+    font-size: 26px;
+    padding: 32px 0px 22px 20px;
     display: block;
     color: black;
 }
 .order{
     float: right;
-    font-size: 34px;
+    font-size: 26px;
     padding: 32px 0px 22px 0px;
 }
 .order div{
     float: right;
-    font-size: 12pt;
+    font-size: 12px;
     padding: 0 0 0 5px;
 }
 .order a{
     float: left;
-    font-size: 34px;
+    font-size: 26px;
     padding: 0px 5px 0px 44px;
     display: block;
     color: black;
 }
 .login{
     float: right;
-    font-size: 34px;
+    font-size: 26px;
     padding: 32px 0px 22px 0px;
 }
 .login div{
     float: right;
-    font-size: 12pt;
+    font-size: 12px;
     padding: 0 0 0 5px;
 }
 .login a{
     float: left;
-    font-size: 34px;
+    font-size: 26px;
     padding: 0px 5px 0px 26px;
     display: block;
     color: black;
+}
+.search{
+    float: right;
+    width: 630px;
+    height: 34px;
+    background: url(../images/bg1.jpg)center no-repeat;
+    margin-right: 15px;
+    margin-top: 32px;
+    margin-bottom: 22px;
+}
+.search div{
+    float: left;
+    margin: 2px 0px 2px 3px;
+}
+.search .search-input{
+    border: hidden;
+    width: 477px;
+    height: 30px;
+}
+.search .select{
+    border-top: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    box-sizing: content-box;
+    width: 110px;
+    height: 30px;
+}
+.search .search-bt{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 5px 0px 5px 3px;
+}
+#logo{
+    float: left;
+    padding: 15px;
+}
+
+/*===================Nav================*/
+#mainNav{
+    width: 1200px;
+    height: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* dropdown */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  font-size: 12px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e9d8f4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(252, 249, 249, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown i{
+    padding: 0px 5px 0px 5px;
+}
+
+/*==============Slider==============*/
+.slider{
+  width: 100%;
+  height: 270px;
+  float: left;
+
+  /* position: relative; */
+}
+.slide_content{
+  float: left;
+  width: 100%;
+  padding: 0px;
 }

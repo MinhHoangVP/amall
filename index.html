@@ -13,8 +13,8 @@
 
 <body>
 
-    <!--top-->
-    <div class="top">
+    <!--header-->
+    <div class="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 my-auto">
@@ -26,33 +26,146 @@
                 <div class="col-lg-1 my-auto">
                     <div class="order">
                         <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                        <div>Đơn</br>hàng</div>
+                        <div>Đơn<br>hàng</div>
                     </div>
                 </div>
 
                 <div class="col-lg-1 my-auto">
                     <div class="login">
                         <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
-                        <div>Đăng</br>Nhập</div>
+                        <div>Đăng<br>Nhập</div>
                     </div>
                 </div>
 
                 <div class="col-lg-7 my-auto">
                     <div class="search">
-                        <form>
-                            <input type="text" name="search" placeholder="Tìm kiếm sản phẩm,thương hiệu bạn mong muốn">
-                        </form>
+                        <div class="search-box">
+                            <input type="text" class="search-input" id="search"
+                                placeholder="Tìm kiếm sản phẩm, thương hiệu bạn mong muốn..." />
+                        </div>
+                        
+                        <!-- <div class="divider"></div> -->
+
+                        <div class="dropdown">
+                            <select name="theloai" class="select">
+                                <option value="TC">Tất cả</option>
+                                <option value="KM">Khuyến mại</option>
+                                <option value="DT">Điện tử</option>
+                                <option value="TT">Thời trang</option>
+                                <option value="DHTPK">Đồng hồ, Túi & Phụ kiện</option>
+                                <option value="NCDS">Nhà cửa & Đời sống</option>
+                                <option value="SKSD">Sức khỏe & Sắc đẹp</option>
+                                <option value="TEDC">Trẻ em & Đồ chơi</option>
+                             </select>
+                        </div>
+
+                        <div class="search-bt">
+                            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </div>
+                        
+
                     </div>
                 </div>
+
+                <div class="col-lg-2 my-auto">
+                    <div id="logo">
+                        <a href="#"><img src="./public/images/logo.png" alt="Amall.vn" style="width:190px ;height:51px"></a>
+                    </div>
+                </div>
+
             </div>
         </div>
 
 
 
     </div>
+    <!--end header-->
 
 
-    <!--end top-->
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                            Danh mục sản phẩm</a>
+                        <div class="dropdown-content" aria-labelledby="triggerId">
+                            <a  href="#"><i class="fa fa-mobile" aria-hidden="true"></i>Điện thoại, viễn thông</a>
+                            <a  href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Máy tính, linh kiện</a>
+                            <a  href="#"><i class="fa fa-television" aria-hidden="true"></i>Điện tử, điện máy</a>
+                            <a  href="#"><i class="fa fa-camera" aria-hidden="true"></i>Máy ảnh, máy quay</a>
+                            <a  href="#"><i class="fa fa-car" aria-hidden="true"></i>Ô tô, xe máy, xe đạp</a>
+                            <a  href="#"><i class="fa fa-female" aria-hidden="true"></i>Thời trang, phụ kiện</a>
+                            <a  href="#"><i class="fa fa-child" aria-hidden="true"></i>Mẹ & bé</a>
+                            <a  href="#"><i class="fa fa-medkit" aria-hidden="true"></i>Sức khỏe, sắc đẹp</a>
+                            <a  href="#"><i class="fa fa-cutlery" aria-hidden="true"></i>Đồ dùng sinh hoạt</a>
+                            <a  href="#"><i class="fa fa-bed" aria-hidden="true"></i>Nội thất, ngoại thất</a>
+                            <a  href="#"><i class="fa fa-book" aria-hidden="true"></i>Sách, văn phòng, quà tặng</a>
+                            <a  href="#"><i class="fa fa-bicycle" aria-hidden="true"></i>Thể thao</a>
+                            <a  href="#"><i class="fa fa-building" aria-hidden="true"></i>Công nghiệp, xây dựng</a>
+                            <a  href="#"><i class="fa fa-globe" aria-hidden="true"></i>Dịch vụ, giải trí, du lịch</a>
+                            <a  href="#"><i class="fa fa-coffee" aria-hidden="true"></i>Thực phẩm, đồ uống</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Khuyến mại</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Điện tử</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Thời trang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Đồng hồ, Túi & Phụ kiện</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Nhà cửa & Đời sống</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Sức khỏe & Sắc đẹp</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Trẻ em & Đồ chơi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end Nav-->
+
+
+    <!-- Slide -->
+
+    <div class="slider">
+        <div class="slide_content">
+            <div class="content">
+                <img src="./public/images/slide1.png" alt="image" class="slide_img">
+            </div>
+
+            <div class="pagination">
+                <!-- <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+
+                <span class="current">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end Slide -->
+
 
     <!--jQuery-->
     <script src="public/js/jquery-3.2.1.min.js"
